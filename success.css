@@ -1,0 +1,438 @@
+@font-face {
+    font-family: 'ocr-a'; /* Nama font yang ingin Anda gunakan */
+    src: url('./Font/ocr-a-extended.ttf') format('truetype'); /* Path relatif ke file font TTF */
+    /* Jika Anda memiliki versi lain dari font untuk berbagai format, Anda bisa menambahkannya di sini */
+}
+
+.wrap-pindai {
+    display: flex;
+    align-items: center;
+}
+
+.numer-kk {
+    font-family: 'ocr-a';
+    text-decoration: underline;
+}
+
+.teks-slip {
+    color: #333399;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    object-fit: cover;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    top: 2%;
+    left: 7%;
+    width: 240px;
+}
+
+.wrap-mid-success .h2 {
+    position: relative;
+    top: 8px;
+    left: 35px;
+    font-size: 20px;
+    height: max-content;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+}
+
+.wrap-mid-success .h2 img {
+    margin-right: 10px;
+    width: 24px;
+}
+
+.form-mid-success {
+    width: 98%;
+    position: relative;
+    margin-top: 0px;
+    height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.wrap-child-1c {
+    display: flex;
+}
+
+.wc1c {
+    display: flex;
+    margin-right: 10px;
+    text-align: 12px;
+    align-items: center;
+}
+
+.wrap-mid-success {
+    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 8px;
+    padding: 20px;
+    width: 85vw;
+    margin-top: 115px;
+    height: max-content;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.wrap-all {
+    width: 100%;
+    height: max-content;
+}
+
+.wrap-1 {
+    width: 100%;
+    height: max-content;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(199, 199, 199);
+}
+
+.wrap-bottom {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrap-bottom p {
+    width: 60%;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.wrap-bottom img {
+    width: 120px;
+}
+
+.check {
+    margin-bottom: 30px;
+}
+
+.wrap-1 h3, .wrap-1 p {
+    font-size: 14px;
+}
+
+.wrap-content {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    height: max-content;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap-all img {
+    width: 12px;
+}
+
+.wrap-1a {
+    justify-content: space-between;
+}
+
+.wrap-1b .wrap-child-1 {
+    width: 50%;
+}
+
+.wrap-1c .wrap-child-1 {
+    width: 50%;
+}
+
+.kartu {
+    color: #06cdba;
+    font-size: 18px;
+}
+
+.pindai {
+    color: #afafaf;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.pusat {
+    color: #06cdba;
+    font-size: 12px;
+}
+
+.btn-form:active {
+    transition: 0.7;
+    scale: 0.97;
+}
+
+.btn-form img {
+    width: 14px;
+    margin-right: 6px;
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    font-size: 12px;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.left-footer span {
+    margin-left: 10px;
+}
+
+.left-footer p {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.right-footer p {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-right: 40px;
+    color: white;
+}
+
+.left-footer {
+    width: 50vw;
+    padding-left: 90px;
+}
+.left-footer span {
+    color: #fd7e14;
+}
+
+.right-footer {
+    width: 50vw;
+    display: flex;
+    padding-right: 90px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-footer span {
+    background-color: white;
+    padding: 3px 10px;
+    color: #e83e8c;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+
+.right-footer img {
+    width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrap-mid-success .h2 {
+        position: relative;
+        top: 6px;
+        left: 20px;
+        font-size: 20px;
+        display: block;
+        font-weight: 500;
+        align-items: none;
+    }
+
+    .wrap-all h3 {
+        font-size: 20px;
+    }
+
+    .wrap-all p {
+        font-size: 18px;
+        width: max-content;
+    }
+
+    .wrap-1 {
+        width: 100%;
+        height: max-content;
+        padding: 4px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-top: 1px solid rgb(199, 199, 199);
+    }
+
+    .kartu {
+        position: relative;
+        top: -10px;
+        color: #06cdba;
+        font-size: 18px;
+    }
+    
+    .wrap-pindai {
+        top: -10px;
+        position: relative;
+        left: 30px;
+    }
+
+    .wrap-mid-success {
+        background-color: rgba(255, 255, 255, 0.747);
+        border-radius: 8px;
+        padding: 12px;
+        width: 85vw;
+        top: 0;
+        margin-top: 115px;
+        min-height: max-content;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .form-mid-success {
+        width: 98%;
+        position: relative;
+        height: max-content;
+        margin-top: 0px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 4px;
+        box-sizing: border-box;
+    }
+    
+    .wrap-content {
+        margin-top: 20px;
+        width: 80%;
+        margin-left: auto;
+        height: max-content;
+        overflow-x: hidden;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wrap-child-1c {
+        display: flex;
+        width: max-content;
+    }
+
+    .wc1c {
+        display: flex;
+        margin-right: 10px;
+        width: max-content;
+        text-align: 12px;
+        align-items: center;
+    }
+
+    .wc1c img {
+        margin-right: 4px;
+    }
+
+    .child-1 h3 {
+        width: max-content;
+    }
+
+    .wrap-bottom {
+        position: relative;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .wrap-bottom p {
+        width: 100%;
+        height: max-content;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+   
+    .footer {
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        margin-top: auto;
+        overflow: visible;
+        align-items: center;
+        font-size: 12px;
+        height: max-content;
+        justify-content: center;
+    }
+    
+    .left-footer {
+        width: 100vw;
+        text-align: center;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-footer p {
+        width: 100%;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+    }
+    
+    .right-footer {
+        width: 100vw;
+        display: flex;
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
